@@ -25,7 +25,8 @@ This project focuses on answering two key questions:
   - `TOTPRO`: Total number of synchronous program sessions
   - `TOTATTEN`: Total attendance at synchronous programs
   - `TOTINCM`: Total operating revenue
-  - `TOTOPEXP`: Total operating expenditures     
+  - `TOTOPEXP`: Total operating expenditures 
+  - `POPU_UND`: Unduplicated population of the legal service area for the library  
   - `ZIP_CODE`: Administrative ZIP code of the library system  
 
 ### **2. Community Demographics Data**  
@@ -33,7 +34,6 @@ This project focuses on answering two key questions:
 - **Key Features**:  
   - `MEDIAN_INCOME`: Median household income by ZIP Code Tabulation Area (ZCTA)  
   - `BACHELORS_PERCENT`: Percentage of population with a bachelor’s degree or higher  
-  - `POPULATION`: Total population  
   - `UNEMPLOYMENT_RATE`: Unemployment rate  
   - `ZIP_CODE`: ZIP code 
   
@@ -42,13 +42,13 @@ This project focuses on answering two key questions:
 ## **Data Collection**  
 1. **IMLS Data**:  
    - Downloaded the `PLS_FY22_AE_pud22i.csv` file from the IMLS website.  
-   - Filtered columns to retain `ZIP_CODE`, `TOTCIR`, `VISITS`, `REGBOR`, `TOTSTAFF`, `TOTATTEN`, `TOTPRO`, `GPTERMS`, `TOTINCM`, `TOTOPEXP`, `HRS_OPEN`.  
+   - Filtered columns to retain `ZIP_CODE`, `TOTCIR`, `VISITS`, `REGBOR`, `TOTSTAFF`, `TOTATTEN`, `TOTPRO`, `GPTERMS`, `TOTINCM`, `TOTOPEXP`, `HRS_OPEN`, `POPU_UND`.  
    
 
 2. **Census Data**:  
    - **API Integration**: Fetched data using the **US Census Bureau API** (ACS 5-Year Estimates 2022).  
      - **Tools**: Python `census` library with a registered [Census API key](https://api.census.gov/data/key_signup.html).  
-     - **Features**: Extracted `B19013_001E` (median income), `B15003_022E` (% bachelor’s degree), `B01003_001E` (population), and `B23025_005E` (unemployment rate).  
+     - **Features**: Extracted `B19013_001E` (median income), `B15003_022E` (% bachelor’s degree), and `B23025_005E` (unemployment rate).  
  
 
 ---
