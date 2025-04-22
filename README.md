@@ -49,7 +49,7 @@ This project focuses on answering two key questions:
    - **API Integration**: Fetched data using the **US Census Bureau API** (ACS 5-Year Estimates 2022).  
      - **Tools**: Python `census` library with a registered [Census API key](https://api.census.gov/data/key_signup.html).  
      - **Features**: Extracted `B19013_001E` (median income), `B15003_022E` (% bachelor’s degree), and `B23025_005E` (unemployment rate).  
-     - 📄 [View script: `fetch_census_data.py`](./Scripts/fetch_census_data.py)
+     - 📎 [`fetch_census_data.py`](./Scripts/fetch_census_data.py)
  
-
+- **Merged datasets on `ZIP_CODE`**: 📎 [`merge-datasets.py`](./Scripts/merge-datasets.py)
 ---
