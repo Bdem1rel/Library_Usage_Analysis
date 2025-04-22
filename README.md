@@ -16,10 +16,16 @@ This project focuses on answering two key questions:
 ### **1. Library Usage Data**  
 - **Source**: [IMLS Public Library Survey (2022)](https://www.imls.gov/research-evaluation/data-collection/public-libraries-survey)  
 - **Key Features**:  
-  - `TOTCIR`: Total checkouts (books, e-books, etc.)  
-  - `VISITS`: Program attendance (workshops, events)  
-  - `SQ_FEET`: Library size  
-  - `STAFF`: Number of staff members  
+  - `TOTCIR`: Total circulation of materials
+  - `VISITS`: Total annual library visits 
+  - `REGBOR`: Number of registered users   
+  - `TOTSTAFF`: Total paid FTE employees
+  - `GPTERMS`: Internet computers used by the general public
+  - `HRS_OPEN`: Total annual public service hours for all service outlets
+  - `TOTPRO`: Total number of synchronous program sessions
+  - `TOTATTEN`: Total attendance at synchronous programs
+  - `TOTINCM`: Total operating revenue
+  - `TOTOPEXP`: Total operating expenditures     
   - `ZIP_CODE`: Administrative ZIP code of the library system  
 
 ### **2. Community Demographics Data**  
@@ -29,13 +35,14 @@ This project focuses on answering two key questions:
   - `BACHELORS_PERCENT`: Percentage of population with a bachelor’s degree or higher  
   - `POPULATION`: Total population  
   - `UNEMPLOYMENT_RATE`: Unemployment rate  
-
+  - `ZIP_CODE`: ZIP code 
+  
 ---
 
 ## **Data Collection**  
 1. **IMLS Data**:  
    - Downloaded the `PLS_FY22_AE_pud22i.csv` file from the IMLS website.  
-   - Filtered columns to retain `ZIP_CODE`, `TOTCIR`, `VISITS`, `SQ_FEET`, and `STAFF`.  
+   - Filtered columns to retain `ZIP_CODE`, `TOTCIR`, `VISITS`, `REGBOR`, `TOTSTAFF`, `TOTATTEN`, `TOTPRO`, `GPTERMS`, `TOTINCM`, `TOTOPEXP`, `HRS_OPEN`.  
    
 
 2. **Census Data**:  
